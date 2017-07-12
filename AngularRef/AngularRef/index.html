@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title></title>
+    <meta charset="utf-8" content="no-cache" />
+    
+    <base href="/" />
+
+    <!--inject-vendor:css-->
+    <link href="content/toastr.min.css" rel="stylesheet" />
+    <link href="content/bootstrap.min.css" rel="stylesheet" />
+    <!--endinject-->
+
+</head>
+<body>
+    <div data-ng-include="'app/layout/shell.html'"></div>
+
+    <!--inject-vendor:js-->
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/angular.min.js"></script>
+    <script src="scripts/angular-route.min.js"></script>
+    <script src="scripts/toastr.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <!--endinject-->
+
+    <!--inject:js-->
+    <!--bootstrapping-->
+    <script src="app/app.module.js"></script>
+
+    <!--core-->
+    <script src="app/core/core.module.js"></script>
+    <script src="app/core/config.js"></script>
+    <script src="app/core/constants.js"></script>
+    <!--services-->
+    <script src="app/core/people.service.js"></script>
+    <script src="app/core/location.service.js"></script>
+    <script src="app/core/notification.service.js"></script>
+    <script src="app/core/country.service.js"></script>
+    <!--layout-->
+    <script src="app/layout/layout.module.js"></script>
+    <script src="app/layout/shell.controller.js"></script>
+
+    <!--people-->
+    <script src="app/people/people.module.js"></script>
+    <script src="app/people/search.controller.js"></script>
+    <script src="app/people/details.controller.js"></script>
+    <script src="app/people/people.filters.js"></script>
+
+    <!--locations-->
+    <script src="app/locations/locations.module.js"></script>
+    <script src="app/locations/search.controller.js"></script>
+    <script src="app/locations/details.controller.js"></script>
+
+    <!--country-->
+    <script src="app/country/country.module.js"></script>
+    <script src="app/country/search.controller.js"></script>
+    <script src="app/country/details.controller.js"></script>
+    <script src="app/country/region.controller.js"></script>
+    <!--endinject-->
+</body>
+</html>

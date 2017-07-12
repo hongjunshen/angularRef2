@@ -1,0 +1,19 @@
+﻿<div>
+    <h2>Country</h2>
+    <hr />
+    <h2>{{vm.message}}</h2>
+   
+    <a href="/country/regions/regions">regions</a>
+    <form ng-submit="vm.search()">
+        <input type="text" ng-model="vm.searchText" />
+        <button type="submit">Submit</button>
+    </form>
+    <br />
+    <!--<ul ng-show="vm.Countries">
+        <li ng-repeat="f in vm.Countries"><a href="/country/{{f.ISO_ID}}">{{f.Name}}</a></li>
+    </ul>-->   
+    <ul ng-show="vm.Countries">
+        <li ng-repeat="f in vm.Countries"><a href="/country/{{f.Code}}">{{f.Name}}</a></li>
+    </ul> 
+
+</div>

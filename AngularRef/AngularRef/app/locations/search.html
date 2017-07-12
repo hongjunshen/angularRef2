@@ -1,0 +1,13 @@
+﻿<div>
+    <h2>Locations</h2>
+    <hr />
+
+    <form ng-submit="vm.search()">
+        <input type="text" ng-model="vm.searchText" />
+        <button type="submit">Submit</button>
+    </form>
+    <br />
+    <ul ng-show="vm.Facilities">
+        <li ng-repeat="f in vm.Facilities"><a href="/locations/{{f.FacilityID}}">{{f.PrimaryName}}</a></li>
+    </ul>
+</div>

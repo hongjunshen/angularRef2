@@ -1,0 +1,13 @@
+﻿<div>
+    <h2>People</h2>
+    <hr />
+
+    <form ng-submit="vm.search()">
+        <input type="text" ng-model="vm.searchText" />
+        <button type="submit">Submit</button>
+    </form>
+    <br />
+    <ul ng-show="vm.Employees">
+        <li ng-repeat="e in vm.Employees"><a href="/people/{{e.NetworkLogin}}">{{e | fullName}}</a></li>
+    </ul>
+</div>
